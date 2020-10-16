@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TareaSemana2</string>
+    <string name="Fecha">Fecha de nacimiento</string>
+    <string name="pnombre">Nombre Completo</string>
+    <string name="pfecha">Fecha</string>
+    <string name="ptelefono">Telefono</string>
+    <string name="pemail">Email</string>
+    <string name="pdescripcion">Descripcion</string>
+    <string name="tv_descripcion">Descripción de Contacto</string>
+    <string name="bt_siguiente">Siguiente</string>
+
+    <string name="Confirmar">Confirmar Datos</string>
+</resources>

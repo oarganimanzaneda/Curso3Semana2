@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pnombre"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNombre"
+        android:clickable="false"
+        android:text="@string/Fecha"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" />
+
+    <DatePicker
+        android:id="@+id/dpFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFecha"
+        android:calendarViewShown="false"
+        android:focusable="false"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpFecha"
+        android:hint="@string/ptelefono"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTelefono"
+        android:hint="@string/pemail"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:clickable="false"
+        android:text="@string/tv_descripcion"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDescripcion"
+        android:hint="@string/pdescripcion"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDescripcion"
+        android:background="@android:drawable/btn_default_small"
+        android:hint="@string/pdescripcion"
+        android:onClick="siguiente"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/bt_siguiente"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+</RelativeLayout>
